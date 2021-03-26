@@ -60,6 +60,19 @@ export default () => (
 			}}
 		/>
 		<Tabs.Screen
+			name="Schedule"
+			component={Schedule}
+			options={{
+				tabBarIcon: ({ focused, color }) => (
+					<TabBarIcon
+						focused={focused}
+						tintColor={color}
+						name="calendar-outline"
+					/>
+				),
+			}}
+		/>
+		<Tabs.Screen
 			name="Twitter"
 			component={Twitter}
 			options={{
@@ -95,7 +108,7 @@ export default () => (
 					<TabBarIcon
 						focused={focused}
 						tintColor={color}
-						name="logo-instagram"
+						name="videocam-outline"
 					/>
 				),
 			}}
@@ -113,18 +126,6 @@ export default () => (
 				),
 			}}
 		/>
-		<Tabs.Screen
-			name="Schedule"
-			component={Schedule}
-			options={{
-				tabBarIcon: ({ focused, color }) => (
-					<TabBarIcon
-						focused={focused}
-						tintColor={color}
-						name="calendar-outline"
-					/>
-				),
-			}}
-		/>
+
 	</Tabs.Navigator>
 )

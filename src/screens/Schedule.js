@@ -154,7 +154,7 @@ export default Schedule = () => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: '#000' }}>
       <StatusBar barStyle="light-content" />
-      <Text style={styles.headerText}>Schedule</Text>
+      <Text style={styles.headerText}>Weekly Schedule</Text>
       <TabView
         tabBarPosition='top'
         style={{ padding: 0 }}
@@ -170,19 +170,19 @@ const styles = StyleSheet.create({
 
   dayText: {
     marginTop: 10,
-    padding: 10,
+    padding: 5,
     textAlign: 'center',
-    fontSize: 21,
-    fontWeight: '800',
-    color: '#fff'
+    fontSize: 18,
+    color: '#fff',
+    fontFamily: 'Poppins-Bold',
   },
 
   headerText: {
-    marginBottom: 5,
-    textAlign: 'center',
-    fontSize: 22,
-    fontWeight: '800',
-    color: '#fff'
+    margin: 5,
+    color: '#fff',
+    fontSize: 18,
+    fontFamily: 'Poppins-Bold',
+    textAlign: 'center'
   },
   backgroundImage: {
     flex: 1,
