@@ -11,7 +11,7 @@ export const globalStyles = StyleSheet.create({
     alignItems: 'center',
   },
   textPosition: {
-    marginTop: Platform.OS === 'ios' ? 10 : 5,
+    marginTop: Platform.OS === 'ios' ? 5 : 5,
     marginBottom: 5,
     alignItems: 'center',
   },

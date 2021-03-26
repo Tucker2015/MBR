@@ -34,6 +34,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     width: win.width / 1.1,
-    height: win.height / 3,
+    height: win.height / 3.3,
   }
 })
