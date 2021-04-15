@@ -56,13 +56,13 @@ export default function App() {
         thirdPartyCookiesEnabled
         source={{ uri: 'https://mbradio.us' }}
         startInLoadingState={true}
-        renderLoading={() => (
-          <ActivityIndicator
-            color="white"
-            size="large"
-            style={styles.activity}
-          />
-        )}
+      // renderLoading={() => (
+      //   <ActivityIndicator
+      //     color="white"
+      //     size="large"
+      //     style={styles.activity}
+      //   />
+      // )}
       />
     </SafeAreaView>
   );
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   activity: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#000',
+    backgroundColor: 'transparent',
   },
   navbar: {
     height: 40,

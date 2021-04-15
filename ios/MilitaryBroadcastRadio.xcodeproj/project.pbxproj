@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* MilitaryBroadcastRadioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MilitaryBroadcastRadioTests.m */; };
+		0A29CF142628F0B800E317B4 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A29CF132628F0B800E317B4 /* BootSplash.storyboard */; };
 		0AA134372565EBBD004DAA5B /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA134362565EBBD004DAA5B /* dummy.swift */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -48,6 +49,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* MilitaryBroadcastRadioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MilitaryBroadcastRadioTests.m; sourceTree = "<group>"; };
 		03DFA0EDCD8C4A22405D118F /* Pods-MilitaryBroadcastRadio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MilitaryBroadcastRadio.release.xcconfig"; path = "Target Support Files/Pods-MilitaryBroadcastRadio/Pods-MilitaryBroadcastRadio.release.xcconfig"; sourceTree = "<group>"; };
+		0A29CF132628F0B800E317B4 /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = MilitaryBroadcastRadio/BootSplash.storyboard; sourceTree = "<group>"; };
 		0A980C3BFDEB4A9CA713692E /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		0AA134352565EBBD004DAA5B /* MilitaryBroadcastRadio-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MilitaryBroadcastRadio-Bridging-Header.h"; sourceTree = "<group>"; };
 		0AA134362565EBBD004DAA5B /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				0A29CF132628F0B800E317B4 /* BootSplash.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				0AA134362565EBBD004DAA5B /* dummy.swift */,
 				0AA134352565EBBD004DAA5B /* MilitaryBroadcastRadio-Bridging-Header.h */,
@@ -264,6 +267,7 @@
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
 				DD75E39A52D17C292C7C044C /* [CP] Copy Pods Resources */,
+				2B12C219951214A13F2C525F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,6 +290,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				5A3A3C35D9CD0056B25361E4 /* [CP] Copy Pods Resources */,
+				60B80EF949AB254025DE23D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -395,6 +400,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A29CF142628F0B800E317B4 /* BootSplash.storyboard in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				E882FBF51F324B28BB937FDC /* Poppins-Bold.ttf in Resources */,
@@ -433,6 +439,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		2B12C219951214A13F2C525F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MilitaryBroadcastRadio-MilitaryBroadcastRadioTests/Pods-MilitaryBroadcastRadio-MilitaryBroadcastRadioTests-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MilitaryBroadcastRadio-MilitaryBroadcastRadioTests/Pods-MilitaryBroadcastRadio-MilitaryBroadcastRadioTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -518,6 +542,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MilitaryBroadcastRadio/Pods-MilitaryBroadcastRadio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60B80EF949AB254025DE23D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MilitaryBroadcastRadio/Pods-MilitaryBroadcastRadio-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MilitaryBroadcastRadio/Pods-MilitaryBroadcastRadio-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		76499EDCB6C61E9C70A7593A /* [CP] Check Pods Manifest.lock */ = {

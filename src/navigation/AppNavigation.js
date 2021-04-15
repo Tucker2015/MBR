@@ -33,8 +33,8 @@ export default () => (
 			activeBackgroundColor: '#0B6AF4',
 			tabStyle: 'icon-only'
 		}}
-		appearence={{
-			tabBarBackground: 'black',
+		appearance={{
+			tabBarBackground: 'rgba(0,0,0,1)',
 			floating: false,
 			whenActiveShow: 'TabElementDisplayOptions.ICON_ONLY',
 			topPadding: 5,

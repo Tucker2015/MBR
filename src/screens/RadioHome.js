@@ -5,32 +5,20 @@ import {
   TouchableOpacity,
   Image,
   View,
-  Linking,
   ImageBackground,
-  StyleSheet,
   SafeAreaView,
   StatusBar
 } from 'react-native';
 import { globalStyles } from '../styles/globalStyles';
 import TrackPlayer, {
   usePlaybackState,
-  updateMetadataForTrack,
 } from 'react-native-track-player';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import NativeWebpage from '../screens/ClipScreen';
-import { AirPlayButton } from 'react-native-airplay-cast';
+import AirPlayButton from 'react-native-airplay-button';
 
 export default function Radio() {
-  const fadeIn = {
-    from: {
-      translateX: -600,
-      opacity: 0,
-    },
-    to: {
-      translateX: 0,
-      opacity: 1
-    },
-  };
+
   const [isLoading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const playbackState = usePlaybackState();
@@ -205,8 +193,7 @@ export default function Radio() {
           <VolumeSlider />
         </View> */}
 
-        <Animatable.View
-          animation={fadeIn}
+        <View
           style={globalStyles.playContainer}>
           <TouchableOpacity
             style={globalStyles.playButtonContainer}
@@ -245,7 +232,7 @@ export default function Radio() {
               )}
             </TouchableOpacity>
           </View>
-        </Animatable.View>
+        </View>
 
       </ImageBackground>
     </SafeAreaView>
