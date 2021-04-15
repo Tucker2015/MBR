@@ -6447,7 +6447,7 @@ react-native-video@^5.1.1:
     prop-types "^15.7.2"
     shaka-player "^2.5.9"
 
-react-native-webview@^11.0.0:
+react-native-webview@^11.4.0:
   version "11.4.0"
   resolved "https://registry.yarnpkg.com/react-native-webview/-/react-native-webview-11.4.0.tgz#cf8707e751231d81c17d54c5e2df0009d84e8949"
   integrity sha512-il4OOJxBJgFXk8rtVgYQJIGRqYD5wJXc4By6nvnkHlH3hbyw1Mx5HKfP9Qmsy8xdCwHYgCBjUuCfHoGXJ9hMSA==
