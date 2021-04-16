@@ -50,12 +50,12 @@ export const globalStyles = StyleSheet.create({
     flexShrink: 1,
     marginLeft: 10,
     paddingRight: 10,
-    fontSize: win.width / 32,
+    fontSize: 14,
     color: '#fff',
     fontFamily: "Poppins-Regular",
     textShadowColor: 'rgba(0, 0, 0, 1)',
     textShadowOffset: { width: 1, height: 1 },
-    textShadowRadius: 10,
+    textShadowRadius: 5,
   },
 
 
@@ -71,7 +71,7 @@ export const globalStyles = StyleSheet.create({
     shadowColor: 'rgba(144, 110, 35, 0.16)',
   },
   playContainer: {
-    backgroundColor: 'rgba(0, 0, 0, 0.30)',
+    backgroundColor: 'rgba(0, 0, 0, 0.50)',
     width: '95%',
     borderTopRightRadius: 10,
     borderBottomRightRadius: 10,
@@ -98,6 +98,7 @@ export const globalStyles = StyleSheet.create({
     borderRadius: 20,
     alignItems: 'center',
     justifyContent: 'center',
-    margin: 1,
+    marginRight: 5,
+    marginLeft: 5
   },
 });

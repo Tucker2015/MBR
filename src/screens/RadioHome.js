@@ -16,14 +16,15 @@ import TrackPlayer, {
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import NativeWebpage from '../screens/ClipScreen';
 import AirPlayButton from 'react-native-airplay-button';
+import TextTicker from 'react-native-text-ticker'
 
 export default function Radio() {
 
   const [isLoading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const playbackState = usePlaybackState();
-  const [trackName, setTrackName] = useState('Giving Veterans a voice');
   const [artistName, setArtistName] = useState('Military Broadcast Radio');
+  const [trackName, setTrackName] = useState('Giving Veterans a voice');
   const [albumCover, setAlbumCover] = useState('');
   const [link, setLink] = useState('');
 
@@ -207,18 +208,27 @@ export default function Radio() {
           </TouchableOpacity>
 
           <View style={{ flex: 1 }}>
-            <Text
-              adjustsFontSizeToFit={false}
-              numberOfLines={3}
-              style={globalStyles.metaText}>
+            <TextTicker
+              style={globalStyles.metaText}
+              duration={7000}
+              bouncePadding={{ right: 5 }}
+              loop
+
+              isInteraction={false}
+              repeatSpacer={50}
+              marqueeDelay={5000}>
               {artistName}
-            </Text>
-            <Text
-              adjustsFontSizeToFit={false}
-              numberOfLines={3}
-              style={globalStyles.metaText}>
+            </TextTicker>
+            <TextTicker
+              style={globalStyles.metaText}
+              duration={7000}
+              bouncePadding={{ right: 5 }}
+              loop
+              isInteraction={false}
+              repeatSpacer={50}
+              marqueeDelay={5000}>
               {trackName}
-            </Text>
+            </TextTicker>
           </View>
 
           <View>
@@ -235,7 +245,7 @@ export default function Radio() {
         </View>
 
       </ImageBackground>
-    </SafeAreaView>
+    </SafeAreaView >
   );
 }
 
