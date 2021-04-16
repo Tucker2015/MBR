@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1009537184252-07ub3djns09ua9r8jeb7vc3bcltcl219.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1009537184252-07ub3djns09ua9r8jeb7vc3bcltcl219</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1009537184252-ig0r52htd7uak3qfl6vs08v1i3eu92uf.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCv2nTEgxKW3-KPu9EmYFSx1mglTDkaXJQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1009537184252</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kevtucker.mbr</string>
+	<key>PROJECT_ID</key>
+	<string>mbr-android-10</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mbr-android-10.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1009537184252:ios:608a1a639571696be64279</string>
+	<key>DATABASE_URL</key>
+	<string>https://mbr-android-10.firebaseio.com</string>
+</dict>
+</plist>
