@@ -43,8 +43,10 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Send Geolocated notifications</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>Send Geolocated notifications</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>AntDesign.ttf</string>
@@ -71,6 +73,7 @@
 		<string>audio</string>
 		<string>fetch</string>
 		<string>processing</string>
+		<string>remote-notification</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>BootSplash</string>

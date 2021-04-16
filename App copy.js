@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import BootSplash from "react-native-bootsplash";
 import AppNavigation from './src/navigation/AppNavigation';
 import { Animated, Dimensions, StyleSheet } from 'react-native';
-import OneSignal from 'react-native-onesignal';
+
 
 let bootSplashLogo = require("./assets/bootsplash_logo.png");
 
@@ -44,47 +44,11 @@ let App = () => {
 
   useEffect(() => {
     bootSplashLogoIsLoaded && init();
-    OneSignal.setAppId("04e121b6-0397-4781-9405-9ba01db759a3");
-    OneSignal.promptForPushNotificationsWithUserResponse(response => {
-      console.log("Prompt response:", response);
-    });
-
-    OneSignal.setNotificationWillShowInForegroundHandler(notifReceivedEvent => {
-      console.log("OneSignal: notification will show in foreground:", notifReceivedEvent);
-      let notif = notifReceivedEvent.getNotification();
-
-      const button1 = {
-        text: "Cancel",
-        onPress: () => { notifReceivedEvent.complete(); },
-        style: "cancel"
-      };
-
-      const button2 = { text: "Complete", onPress: () => { notifReceivedEvent.complete(notif); } };
-
-      Alert.alert("Complete notification?", "Test", [button1, button2], { cancelable: true });
-    });
-    OneSignal.setNotificationOpenedHandler(notification => {
-      console.log("OneSignal: notification opened:", notification);
-    });
-    OneSignal.setInAppMessageClickHandler(event => {
-      console.log("OneSignal IAM clicked:", event);
-    });
-    OneSignal.addEmailSubscriptionObserver((event) => {
-      console.log("OneSignal: email subscription changed: ", event);
-    });
-    // OneSignal.addSubscriptionObserver(event => {
-    //   console.log("OneSignal: subscription changed:", event);
-    //   this.setState({ isSubscribed: event.to.isSubscribed })
-    // });
-    OneSignal.addPermissionObserver(event => {
-      console.log("OneSignal: permission changed:", event);
-    });
-
-
   }, [bootSplashLogoIsLoaded]);
 
   return (
     <NavigationContainer>
+      <OneSig />
       <AppNavigation></AppNavigation>
       {bootSplashIsVisible && (
         <Animated.View

@@ -3,6 +3,10 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
+target 'OneSignalNotificationServiceExtension' do
+  pod 'OneSignal', '>= 3.0', '< 4.0'
+end
+
 target 'MilitaryBroadcastRadio' do
   config = use_native_modules!
 
@@ -25,6 +29,9 @@ target 'MilitaryBroadcastRadio' do
   end
 end
 
+
+  # Pods for OneSignalNotificationServiceExtension
+  
 target 'MilitaryBroadcastRadio-tvOS' do
   # Pods for MilitaryBroadcastRadio-tvOS
 

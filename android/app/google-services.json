@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1009537184252",
+    "firebase_url": "https://mbr-android-10.firebaseio.com",
+    "project_id": "mbr-android-10",
+    "storage_bucket": "mbr-android-10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009537184252:android:bb39ae3159c5fe95e64279",
+        "android_client_info": {
+          "package_name": "com.kevtucker.mbr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009537184252-1q06svs7l9kunvdedsfako4fk6o2fh9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM8O7tH2ilGfa5mylRFmoQZpSODlGVmUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009537184252-1q06svs7l9kunvdedsfako4fk6o2fh9f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1009537184252-07ub3djns09ua9r8jeb7vc3bcltcl219.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kevtucker.mbr",
+                "app_store_id": "1503993582"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
