@@ -185,7 +185,7 @@ export default function Radio() {
             style={globalStyles.cover}
           />
         </View>
-        <View style={[{ position: 'absolute', bottom: 65 }]}>
+        <View style={[{ position: 'relative', marginTop: 5 }]}>
           <NativeWebpage />
         </View>
         {/* <View style={{ position: 'absolute', bottom: 80 }}>

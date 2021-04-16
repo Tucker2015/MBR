@@ -38,7 +38,7 @@ export default () => (
 			floating: false,
 			whenActiveShow: 'TabElementDisplayOptions.ICON_ONLY',
 			topPadding: 5,
-			bottomPadding: 5,
+			bottomPadding: 15,
 			horizontalPadding: 5,
 			shadow: true,
 			whenActiveShow: 'icon-only',

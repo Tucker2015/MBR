@@ -30,10 +30,10 @@ export default class NativeWebpage extends Component<Props, State> {
 const styles = StyleSheet.create({
 
   container: {
-
+    position: 'relative',
     flexDirection: 'row',
     justifyContent: 'center',
-    width: win.width / 1.1,
-    height: win.height / 3.3,
+    width: win.width / 1.05,
+    height: win.height / 3,
   }
 })
